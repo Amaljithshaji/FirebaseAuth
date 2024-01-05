@@ -46,14 +46,9 @@ class _SignInState extends State<SignIn> {
               onTap: ()async{
 
            bool res = await _authmethod.signInWithGoogle();
-           if(res){
+           if(res) {
             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home(),));
-           }else{
-            ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text('SignIN Failed'),
-                    duration: Duration(seconds: 2),
-                  ),);
+            print(res);
            }
               },
               child: Container(

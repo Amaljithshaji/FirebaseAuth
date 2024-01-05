@@ -9,7 +9,7 @@ class Search_bar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: MediaQuery.of(context).size.width * 0.9,
-        height: MediaQuery.of(context).size.height * 0.08,
+        height: MediaQuery.of(context).size.height * 0.07,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -37,7 +37,7 @@ class Search_bar extends StatelessWidget {
               border: InputBorder.none,
               prefixIcon: Icon(
                 Icons.search,
-                size: 40,
+                size: 30,
                 color: Color(0xffFA6A02),
               ),
            suffixIcon: Image.asset('assets/img/Frame (1).png',width: 50,height: 50,)
